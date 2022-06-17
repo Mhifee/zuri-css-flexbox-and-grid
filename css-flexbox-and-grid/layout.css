@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    flex-direction: row;
+    height: 70vh;
+}
+.flex, .grid{
+    padding: 30px 0;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    color: magenta;
+    padding: 35px;
+}
+h2{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 30px;
+    padding: 25px;
+    text-align: center;   
+}
+a{
+    color: white;
+    background-color: magenta;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 25px;
+}
+a:hover{
+    color: magenta;
+    background-color: transparent;
+    border: 2px solid magenta;
+}
+
+@media only screen and (min-width:550px) and (max-width:690px){
+    h1{
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 40px;
+        color: magenta;
+        padding: 60px;
+    }
+    h2{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 35px;
+        padding: 30px;
+        text-align: center;   
+    }      
+}
+@media only screen and (min-width:673px) and (max-width:1000px) {
+    body{
+        background-image: url(images/bg-desktop.svg);
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        height: 60vh;
+        width: 90%;
+    }
+    .flex, .grid{
+        flex: 45%;
+    }
+    h1{
+        font-size: 45px;
+        margin-top: 50px;
+        padding: 35px;
+        height: 100px;
+    }
+    h2{
+        padding: 25px;
+        font-size: 35px;
+    }
+} 
+@media only screen and (min-width:1001px) {
+    body{
+        background-image: url(images/bg-desktop.svg);
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        height: 60vh;
+        width: 90%;
+    }
+    .flex, .grid{
+        flex: 45%;
+    }
+    h1{
+        font-size: 45px;
+        margin-top: 50px;
+        padding: 35px;
+        height: 100px;
+    }
+    h2{
+        padding: 25px;
+        font-size: 35px;
+    }
+}
